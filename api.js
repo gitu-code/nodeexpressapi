@@ -528,7 +528,7 @@ app.post('/api/register', function(req, res){
 });
 
 app.get("/", (request, response) => {
-    response.json({'error':0, 'message':'Api Working Successfully'});
+    response.send({'error':0, 'message':'Api Working Successfully'});
 });
 
 // login
