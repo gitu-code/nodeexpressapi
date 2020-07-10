@@ -525,7 +525,11 @@ app.post('/api/register', function(req, res){
 
     })
 
-})
+});
+
+app.get("/", (request, response) => {
+    response.json({'error':0, 'message':'Api Working Successfully'});
+});
 
 // login
 app.post('/api/login', function(req, res) {
@@ -587,8 +591,7 @@ app.post('/api/model', function(req, res) {
         }
     })
 
-})
-
+});
 
 // country
 app.post('/api/country', function(req, res){
