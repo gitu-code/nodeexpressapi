@@ -3,7 +3,7 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 var multer  = require('multer');
-var port = process.env.PORT || 4545;
+var POrT = process.env.PORT || 4545;
 
 // var uploads = multer({ dest: 'FOREX/images/' })
 
@@ -639,4 +639,4 @@ app.post('/api/country', function(req, res){
 // file or image upload
 
 
-app.listen(port, ()=>{'App is running on port 4545'})
+app.listen(POrT, ()=>{'App is running on port 4545'})
